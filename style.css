@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --button-color: #3C8067;
+    --body-color: #F2EBE3;
+    --hover-color: #1A4031;
+    --title-color: #1C232B;
+    --text-color: #6C7289;
+    --background-color: #FFFFFF;
+
+    --font-one: 'Fraunces', serif;
+    --font-two: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+}
+
+body {
+    font-family: var(--font-two);
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 2.5rem;
+}
+
+.main {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    display: none;
+}
+
+.image .mobile_image {
+    display: block;
+}
+
+.description {
+    padding: 1.8rem;
+    /* text-align: center; */
+}
+
+.description h1 {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    color: var(--title-color);
+    font-family: var(--font-one);
+    font-weight: 700;
+}
+
+.description p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0.8rem 0;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+.price p:first-child {
+    font-size: 2.5rem;
+    color: var(--button-color);
+    margin-right: 0.8rem;
+    font-weight: 700;
+    font-family: var(--font-one);
+}
+
+.price p:last-child {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+#add-to-cart-btn {
+    background-color: var(--button-color);
+    font-family: var(--font-two);
+    color: var(--background-color);
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border-radius: 0.313rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#add-to-cart-btn img {
+    margin-right: 0.625rem;
+}
+
+#add-to-cart-btn:hover {
+    background-color: var(--hover-color);
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        align-items: center;
+    }
+
+    .image .mobile_image {
+        display: none;
+    }
+
+    .image .desktop_image {
+        display: block;
+    }
+
+    .description {
+        text-align: left;
+        padding: 1.5rem 2rem;
+    }
+
+    #add-to-cart-btn {
+        width: 100%;
+    }
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.attribution a {
+    color: #3d8168;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; padding: 1rem; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
